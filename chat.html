@@ -8,9 +8,8 @@
         <script src="https://kit.fontawesome.com/fe934ea359.js" crossorigin="anonymous"></script>
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body>
+    <body class="chat_body">
         <div class="status-bar">
-
             <div class="status-bar_column">13:54</div>
 
             <div class="status-bar_column">
@@ -18,74 +17,90 @@
                 <i class="fas fa-volume-mute"></i>
                 <span class="status-bar_battery-level">100%</span>
                 <i class="fas fa-battery-full"></i>
-                <i class="fas fa-window-minimize"></i>
-                <i class="fas fa-window-close"></i>
             </div>
-            <div class="status-bar_column"></div>
-            
-            <header class="header">
-                <!-- .header_header_column -->
-                <div class="header_header_column">
-                    <a href="index.html">
-                        <i class="fas fa-arrow-left fa-2x"></i>
-                    </a>
-                    <h1 class="header_title">Best Friends</h1>
-                </div>
-                <div class="header_header_column">
-                    <!-- span.header_icon -->
-                    <span class="header_icon">
-                        <i class="fas fa-search"></i>
-                    </span>
-                    <span class="header_icon">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </div>
-            </header>
+        </div>
+        <div class="status-bar_column"></div>
+        
+        <header class="header">
+            <!-- .header_header_column -->
+            <div class="header_header_column">
+                <a href="index.html" class="header_back_btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <h1 class="header_title">Best Friends</h1>
+            </div>
+            <div class="header_header_column">
+                <!-- span.header_icon -->
+                <span class="header_icon">
+                    <i class="fas fa-search"></i>
+                </span>
+                <span class="header_icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+        </header>
 
-            <main class="Chat">
-                <ul class="chat_messages">
-                    <span class="chat_timestamp">Fridey, January 11,2019</span>
-                    <li class="inconming-message message">
-                        <img src="image/IU.png" class="g-avatar message-avbar" />
-                        <div class="message_content">
-                            <span class="message_autor">Best Friend</span>
-                            <div class="message_bubble">
-                                Congrats I love you!
-                            </div>
-    
+        <div class="chat_screen">
+            <ul class="chat_messages">
+                <span class="chat_timestamp">Fridey, January 11,2020</span>
+                <li class="inconming_message message">
+                    <img src="image/IU.png" class="g-avatar message-avbar" />
+                    <div class="message_content">
+                        <div class="message_bubble">
+                            HI!
                         </div>
-                        <span class="message_timestamp"></span>
-                    </li>
-                    <li class="inconming-message message">
-                        <span class="message_timestamp"></span>
+                        <span class="message_autor">IU</span>
 
-                        <div class="message_content">
-                            <div class="message_bubble">
-                                Thank you see you soon!
-                            </div>
+                    </div>
+                    <span class="message_timestamp"></span>
+                </li>
+                <li class="sent_message message">
+                    <span class="message_timestamp"></span>
+
+                    <div class="message_content">
+                        <div class="message_bubble">
+                            Thank you see you soon!
                         </div>
-                        
-                    </li>
-                </ul>
-                <div class="chat_write">
-                    <div class="chat_write-column">
-                        <i class="far fa-plus-square"></i>
-                    </div>
-                    <div class="chat_write-column">
-                        <input type="text" placeholder="Send message" class="chat_write_input">
-                    </div>
-                    <div class="chat_write-column">
-                        <span class="chat_write-icon">
-                            <i class="far fa-smile-wink"></i>
-                        </span>
-                        <span class="chat_write-icon">
-                            <i class="fas fa-microphone"></i>
-                        </span>
+                    </div>                    
+                </li>
+                <li class="inconming_message message">
+                    <img src="image/IU.png" class="g-avatar message-avbar" />
+                    <div class="message_content">
+                        <div class="message_bubble">
+                            Congrats I love you!
+                        </div>
+                        <span class="message_autor">IU</span>
 
                     </div>
+                    <span class="message_timestamp"></span>
+                </li>
+                <li class="sent_message message">
+                    <span class="message_timestamp"></span>
+
+                    <div class="message_content">
+                        <div class="message_bubble">
+                            Thank you see you soon!
+                        </div>
+                    </div>                    
+                </li>                
+            </ul>
+            <div class="chat_write">
+                <div class="chat_write-column">
+                    <i class="far fa-plus-square"></i>
                 </div>
-            </main>
+                <div class="chat_write-column">
+                    <input type="text" placeholder="Send message" class="chat_write_input">
+                </div>
+                <div class="chat_write-column">
+                    <span class="chat_write-icon">
+                        <i class="far fa-smile-wink"></i>
+                    </span>
+                    <span class="chat_write-icon">
+                        <i class="fas fa-microphone"></i>
+                    </span>
 
+                </div>
+            </div>
         </div>
     </body>
 </html>

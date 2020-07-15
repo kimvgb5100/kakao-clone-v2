@@ -1,0 +1,124 @@
+.chat_body{
+    padding: 0;
+}
+
+.chat_body .header,
+.chat_body .status-bar{
+    padding: 0px 20px;
+}
+.chat_screen{
+    background-image: url(../image/chat_back.png);
+    min-height: 100vh;
+    
+}
+
+.chat_write{
+    position: fixed;
+    bottom: 50px;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fcfcfc;
+    padding: 0px 20px;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px -1px rgba(50,50,93,0.25),0 1px 3px -1px rgba(0,0,0,0.3);
+}
+
+.chat_write i {
+    font-size: 15px;
+}
+
+.chat_write-column:nth-child(2){
+    width: 80%;
+}
+
+.chat_write-column input{
+    padding: 20px 10px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+}
+
+.chat_write-column input:focus{
+    outline: none;
+}
+
+.chat_screen .chat_messages{
+    border-top: 1px solid #f7f7f7;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    padding-top: 30px;
+}
+.chat_messages .chat_timestamp{
+    background-color: white;
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.message{
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    margin-bottom: 10px;
+
+}
+
+.message .message_content {
+    width: 80%;
+}
+.inconming_message{
+    align-self: flex-start;
+}
+
+.sent_message{
+    align-self: flex-end;
+}
+
+.inconming_message img{
+    width: 30px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+
+.message .message_bubble{
+    background-color: white;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+    
+}
+
+.inconming_message .message_autor{
+    margin-top: 10px;
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    
+}
+
+.inconming_message .message_bubble{
+    border-bottom-left-radius: 0px;
+    background-image: linear-gradient(to right,#F37335,#FDC830);
+    color: whitesmoke;
+}
+
+
+.sent_message .message_bubble{
+     border-bottom-right-radius: 0px;
+     background-image: linear-gradient(to right,#005AA7,#8f94fb);
+     color: white;
+}
