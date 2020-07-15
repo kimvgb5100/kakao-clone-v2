@@ -9,6 +9,8 @@
 @import "more.css";
 @import "settings.css";
 @import "chat.css";
+@import "mobile.css";
+
 
 
 
@@ -31,3 +33,24 @@ a {
     text-decoration: none;
 }
 
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+main{
+    animation: fadeIn .5s ease-in-out
+}
+/* div{
+    animation: fadeIn .5s ease-in-out
+} */
+
+maini{
+    animation: fadeIn .5s ease-in-out
+}
